@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/448406e3eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Roboto;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding-top: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 5px;
+            padding-bottom: 5px;
+            align-items: center;
+            height: 55px;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 3;
+        }
+
+        .headertop-left {
+            padding-left: 121px;
+            padding-right: 152px;
+
+
+        }
+
+        .headertop-centre {
+            padding-left: 18px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .text {
+
+
+            background: #f7f7f7;
+            border: 0;
+            border-left: 1px solid rgba(36, 39, 44, .1);
+            border-radius: 4px 0 0 4px;
+            box-shadow: inset 0 1px 4px 0 rgb(0 0 0 / 10%);
+            color: #24272c;
+            float: right;
+            font-size: 14px;
+            height: 6px;
+            line-height: 18px;
+            margin-right: 1px;
+            padding: 20px;
+            text-overflow: ellipsis;
+            width: 400px;
+            outline: none;
+            display: inline-block;
+        }
+
+        .headertop--right {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 162px;
+            align-items: center;
+            justify-content: space-between;
+            width: 250px;
+        }
+
+        .small--text {
+            font-size: 11px;
+            text-decoration: underline;
+            color: rgba(36, 39, 44, .7);
+        }
+
+        .med--text {
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        nav {
+            width: 100%;
+            margin-left: 0%;
+            padding-top: 2px;
+            border-top: 1px solid rgba(36, 39, 44, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(36, 39, 44, 0.1);
+            box-shadow: 0 3px 6px 0 rgb(36 39 44 / 10%);
+            position: sticky;
+            top: 65px;
+            background-color: white;
+        }
+
+        .nav--left {
+            width: 61%;
+            padding-left: 83px;
+
+        }
+
+        .nav--right {
+            color: #24272Cb3;
+            padding-top: 5px;
+            line-height: 2.5;
+            float: right;
+            padding-right: 141px;
+        }
+
+        ul {
+            color: #24272CDE;
+
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            text-transform: uppercase;
+            line-height: 2;
+            justify-content: space-between;
+
+        }
+
+        .section1 {
+            background-image: url("cardekho.png ");
+            width: 95%;
+            height: 546px;
+            margin: auto;
+            position: relative;
+
+
+        }
+
+        .section1--form {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 70px 0 rgb(36 39 44 / 30%);
+            height: 408px;
+            left: 90px;
+            padding: 19px 24px;
+            position: absolute;
+            top: 54px;
+            width: 304px;
+
+        }
+
+        .section1--form b {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .section1--form ul {
+            padding: 15px 0px 25px 0px;
+            margin: 0px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        input[type=radio] {
+            transform: scale(1.5);
+            accent-color: red;
+        }
+
+        .btn {
+            border: 1px solid rgba(36, 39, 44, 0.5);
+            border-radius: 4px;
+            font-weight: 500;
+            height: 47px;
+            line-height: 46px;
+            margin-right: 4px;
+            padding: 0px;
+            text-align: center;
+            width: 144px;
+            position: relative;
+        }
+
+        .btn:hover:before {
+            content: "";
+            left: 42%;
+
+            position: absolute;
+            bottom: 0;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-top: 11px solid #24272c;
+        }
+
+        .btn:hover {
+            background-color: #24272c;
+            color: #f7f7f7;
+        }
+
+        .dark--bold {
+
+            font-weight: 600;
+            color: #f75d34;
+            font-size: 14px;
+            padding-right: 15px;
+        }
+
+        .section1--subform {
+            margin-top: 24px;
+
+            border-radius: 2px;
+            border: 1px solid rgba(36, 39, 44, 0.3);
+
+            width: 98%;
+
+            height: 100px;
+        }
+
+        .subform1 {
+            height: 50%;
+            border-bottom: 1px solid rgba(36, 39, 44, 0.3);
+        }
+
+        .subform2 {
+            height: 50%;
+
+        }
+
+        .subform3 {
+            height: 50%;
+
+        }
+
+        .text1 {
+            border-color: transparent;
+            color: #24272c;
+            font-size: 16px;
+            height: 5px;
+            line-height: 18px;
+            padding: 20px;
+            text-overflow: ellipsis;
+            width: 227px;
+            outline: none;
+            display: inline-block;
+        }
+
+        .orange--btn {
+            background-color: #f75d34;
+            font-weight: 600;
+            width: 98%;
+            margin-top: 24px;
+            height: 50px;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            color: #f7f7f7;
+            font-size: 20px;
+            height: 48px;
+            line-height: 47px;
+            margin-bottom: 10px;
+            text-align: center;
+
+        }
+
+        .text--small {
+            float: right;
+            font-size: 14px;
+            color: #24272Cb3;
+            margin-top: 15px;
+            font-weight: 700;
+
+        }
+
+        .btn--black {
+            background-color: #24272c;
+            color: #f7f7f7;
+            border: 1px solid #24272c;
+            border-radius: 0px 4px 4px 0px;
+            width: 60px;
+        }
+
+        .section2 {
+            width: 83%;
+            height: 520px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 130px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            padding-top: 20px;
+
+        }
+
+        .section2>span {
+            font-size: 23px;
+            font-weight: 600;
+            padding-bottom: 15px;
+            padding-left: 20px;
+
+        }
+
+        .section2 ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 0px;
+            padding-left: 20px;
+            width: 400px;
+        }
+
+        .section2 li {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 15px 0px 16px;
+            text-transform: none;
+            color: #24272c;
+
+        }
+
+        .section2 li:hover {
+            color: #f75d34;
+        }
+
+        .section2__subsection {
+
+            width: 288px;
+            height: 341px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            display: inline-block;
+
+            margin-left: 18px;
+        }
+
+        .section2__subsection--text {
+            margin-right: collapse;
+            padding: 13px 16px 16px;
+        }
+
+        .section2__subsection--text p {
+            cursor: pointer;
+            margin-bottom: 5px;
+            margin-top: 0px;
+
+        }
+
+        .section2__subsection--text span {
+            font-size: 18px;
+
+        }
+
+        .orange__outline--btn {
+
+
+            border: 1px solid #f75d34;
+            border-radius: 2px;
+            color: #f75d34;
+            cursor: pointer;
+
+            font-size: 12px;
+            font-weight: 600;
+            height: 38px;
+            letter-spacing: 0;
+            line-height: 36px;
+            margin-bottom: 10px;
+            width: 245px;
+            overflow: hidden;
+            padding: 0 5px;
+            text-align: center;
+            text-overflow: ellipsis;
+            margin-left: 16px;
+
+        }
+
+        .section2-btm {
+            width: 98%;
+            margin-top: 10px;
+            padding-top: 17px;
+            padding-left: 20px;
+            cursor: pointer;
+
+            height: 20px;
+            color: #2176AE;
+            border: 1px solid transparent;
+            border-top-color: rgba(36, 39, 44, .1);
+            font-size: 14px;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        .section3 {
+            width: 83%;
+            height: 425px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            padding-top: 20px;
+
+        }
+
+        .section3>span {
+            font-size: 23px;
+            font-weight: 600;
+
+            padding-left: 20px;
+
+        }
+
+        .section3__subsection {
+            margin-top: 30px;
+
+            width: 288px;
+            height: 341px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            display: inline-block;
+
+            margin-left: 18px;
+        }
+
+        .section3__subsection--text {
+            margin-right: collapse;
+            padding: 13px 16px 16px;
+        }
+
+        .section3__subsection--text p {
+            cursor: pointer;
+            margin-bottom: 5px;
+            margin-top: 0px;
+
+        }
+
+        .section3__subsection--text span {
+            font-size: 18px;
+
+        }
+
+        .section4 {
+            width: 83%;
+            height: 470px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            padding-top: 20px;
+
+        }
+
+        .section4>span {
+            font-size: 23px;
+            font-weight: 600;
+
+            padding-left: 20px;
+
+        }
+
+        .section4__subsection {
+            margin-top: 30px;
+
+            width: 288px;
+            height: 341px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            display: inline-block;
+
+            margin-left: 18px;
+        }
+
+        .section4__subsection--text {
+            margin-right: collapse;
+            padding: 13px 16px 16px;
+        }
+
+        .section4__subsection--text p {
+            cursor: pointer;
+            margin-bottom: 5px;
+            margin-top: 0px;
+
+        }
+
+        .section4__subsection--text span {
+            font-size: 18px;
+
+        }
+
+        .section4-btm {
+            width: 98%;
+            margin-top: 10px;
+            padding-top: 17px;
+            padding-left: 20px;
+            cursor: pointer;
+            height: 20px;
+            color: #2176AE;
+            border: 1px solid transparent;
+            border-top-color: rgba(36, 39, 44, .1);
+            font-size: 14px;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        .section5 {
+            width: 83%;
+            height: 470px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            padding-top: 20px;
+
+        }
+
+        .section5>span {
+            font-size: 23px;
+            font-weight: 600;
+
+            padding-left: 20px;
+
+        }
+
+        .section5__subsection {
+            margin-top: 30px;
+
+            width: 288px;
+            height: 341px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            display: inline-block;
+
+            margin-left: 18px;
+        }
+
+        .section5__subsection--text {
+            margin-right: collapse;
+            padding: 13px 16px 16px;
+        }
+
+        .section5__subsection--text p {
+            cursor: pointer;
+            margin-bottom: 5px;
+            margin-top: 0px;
+
+        }
+
+        .section5__subsection--text span {
+            font-size: 18px;
+
+        }
+
+        .section5-btm {
+            width: 98%;
+            margin-top: 10px;
+            padding-top: 17px;
+            padding-left: 20px;
+            cursor: pointer;
+            height: 20px;
+            color: #2176AE;
+            border: 1px solid transparent;
+            border-top-color: rgba(36, 39, 44, .1);
+            font-size: 14px;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        .greytext--small {
+            font-size: 10px !important;
+            color: #24272C80;
+        }
+
+        .section6 ul {
+            width: 300px;
+            font-size: 16px;
+            padding-left: 20px;
+            margin-left: 0px;
+            font-weight: 200;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+
+        }
+
+        .section6 {
+            width: 83%;
+            height: 412px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            padding-top: 20px;
+
+
+        }
+
+        .section6>span {
+            font-size: 23px;
+            font-weight: 600;
+
+            padding-left: 20px;
+
+        }
+
+        .section6__subsection {
+
+
+            width: 285px;
+            height: 300px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            display: inline-block;
+
+            margin-left: 20px;
+            margin-right: collapse;
+            overflow: hidden;
+        }
+
+        .section6__subsection--text {
+
+            padding: 13px 14px 16px;
+        }
+
+        .section6__subsection--text p {
+            cursor: pointer;
+            margin-bottom: 0px;
+            margin-top: 0px;
+
+        }
+
+        .section6__subsection--text span {
+            font-size: 18px;
+
+        }
+
+        .section6 .greytext--small {
+            font-size: 10px !important;
+            color: #24272C80;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .section6 hr {
+            width: 97%;
+            margin-top: 0%;
+            padding-top: 0%;
+            margin-bottom: 10px;
+
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            ;
+        }
+
+        .section7 {
+            width: 83%;
+            height: 290px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            padding-top: 20px;
+
+        }
+
+        .section7>span {
+            font-size: 23px;
+            font-weight: 600;
+
+            padding-left: 20px;
+
+        }
+
+        .section7__subsection {
+            margin-top: 30px;
+            margin-left: 13px;
+            margin-bottom: 10px;
+            width: 189px;
+            height: 110px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            display: inline-block;
+            padding: 26px 0px;
+        }
+
+        .section7__subsection--text {
+            margin-right: collapse;
+            text-align: center;
+
+        }
+
+        .section7-btm {
+            width: 98%;
+            margin-top: 10px;
+            padding-top: 17px;
+            padding-left: 20px;
+            cursor: pointer;
+            height: 20px;
+            color: #2176AE;
+            border: 1px solid transparent;
+            border-top-color: rgba(36, 39, 44, .1);
+            font-size: 14px;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        .section8 {
+            width: 83%;
+            align-items: center;
+            background: #f0f0f0;
+            border-radius: 8px;
+            flex-direction: row;
+            height: 200px;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .section8-img {
+            height: 70%;
+            margin-top: 20px;
+            width: 100px;
+        }
+
+        .section8--txt {
+            width: 300px;
+            margin-top: 20px;
+            margin-left: 400px;
+            font-size: 14px;
+
+
+        }
+
+        .section8--txt p {
+            font-size: 24px;
+            font-weight: 500;
+            margin: 10px 0px;
+
+        }
+
+        .section8--btn {
+
+
+
+            background-color: #f75d34;
+            font-weight: 600;
+            width: 190px;
+            margin-top: 66px;
+            height: 50px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            color: #f7f7f7;
+            font-size: 14px;
+            height: 48px;
+            line-height: 47px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-left: 40px;
+
+        }
+
+        .section9 {
+            width: 83%;
+            height: 465px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            padding-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .section9>span {
+            font-size: 23px;
+            font-weight: 600;
+
+            padding-left: 20px;
+
+
+        }
+
+        .section9__subsection {
+            margin-top: 30px;
+
+            width: 395px;
+            height: 341px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 18px;
+        }
+
+        .section9__subsection1 {
+            width: 50%;
+            height: 250px;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .section9__subsection2 {
+            width: 50%;
+            height: 250px;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .section9__subsection--text {
+            margin-right: collapse;
+            padding: 0px 16px 16px;
+        }
+
+        .section9__subsection--text p {
+            cursor: pointer;
+            margin-bottom: 5px;
+            margin-top: 0px;
+            color: #24272C80;
+            font-size: 14px;
+
+        }
+
+        .section9__subsection--text span {
+            font-size: 18px;
+            display: inline-block;
+
+        }
+
+        .section9-btm {
+            width: 98%;
+            margin-top: 10px;
+            padding-top: 15px;
+            padding-left: 20px;
+            cursor: pointer;
+            height: 16px;
+            color: #2176AE;
+            border: 1px solid transparent;
+            border-top-color: rgba(36, 39, 44, .1);
+            font-size: 14px;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        .section9__orange--btn {
+
+            background-color: #f75d34;
+            font-weight: 600;
+            width: 75%;
+
+            height: 50px;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            color: #f7f7f7;
+            font-size: 12px;
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .vsTag {
+            background-color: #24272c;
+            border: 1px solid rgba(36, 39, 44, .15);
+            border-radius: 50%;
+            color: #fff;
+            font-weight: 500;
+            height: 36px;
+            line-height: 36px;
+            margin-top: -81px;
+            position: absolute;
+            right: -18px;
+            text-align: center;
+            top: 50%;
+            width: 36px;
+            z-index: 1;
+        }
+
+        .section10 {
+            width: 83%;
+            height: 480px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            padding-top: 20px;
+
+        }
+
+        custom--select {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        select {
+            box-shadow: 0 1px 2px 0 rgb(36 39 44 / 15%);
+            border-color: rgba(36, 39, 44, .15);
+            border-radius: 4px;
+            font-size: 16px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            color: #24272C80;
+            padding-right: 90px;
+        }
+
+        .section10>span {
+            font-size: 23px;
+            font-weight: 600;
+
+            padding-left: 20px;
+
+        }
+
+        .section10__citydesc {
+            width: 140px;
+            height: 150px;
+            box-shadow: 0 1px 3px rgb(36 39 44 / 15%);
+            padding: 20px 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            text-align: center;
+            padding-left: 5px;
+            display: inline-block;
+        }
+
+        .section10__subsection1 {
+            width: 70%;
+        }
+
+        .section10__subsection2 {
+            display: inline-block;
+            font-size: 20px;
+            margin: 20px 0 20px;
+            color: rgba(36, 39, 44, .7);
+            width: 28%;
+            text-align: center;
+        }
+
+        .section11 {
+            width: 83%;
+            height: 510px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            padding-top: 20px;
+
+        }
+
+        .section11>span {
+            font-size: 23px;
+            font-weight: 600;
+
+            padding-left: 20px;
+
+        }
+
+        .section11__subsection {
+            margin-top: 30px;
+
+            width: 598px;
+            height: 200px;
+            border: 1px solid rgba(36, 39, 44, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 0 4px 0 rgb(36 39 44 / 20%);
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 18px;
+        }
+
+        .section11__subsection--text {
+
+            padding: 0px 12px 10px 12px;
+            width: 326px;
+            height: 200px;
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 1.5;
+
+        }
+
+        footer {
+            width: 100%;
+            border-top: 1px solid rgb(36 39 44 / 10%);
+
+            height: 400px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer--top {
+            width: 100%;
+            height: 150px;
+            border-bottom: 1px solid rgb(36 39 44 / 10%);
+            padding-left: 135px;
+            font-size: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        footer ul {
+            display: unset;
+
+
+
+        }
+
+        .navmenu span {
+            font-size: 12px;
+            margin-block-end: 0.5em;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        footer li {
+            font-size: 10px;
+            line-height: 3;
+            color: #24272C80;
+            font-weight: 200;
+            margin-top: 0%;
+        }
+
+        .footer--nav {
+            display: flex;
+            flex-wrap: wrap;
+            width: 55%;
+            justify-content: space-between;
+            margin-left: 140px;
+            margin-top: 35px;
+            margin-right: 10px;
+
+        }
+
+        .navmenu {}
+
+        .footer--right {
+            display: inline-block;
+            width: 25%;
+            margin-top: 60px;
+            padding-left: 140px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .greytext {
+            font-size: 15px;
+            color: #24272C80;
+        }
+
+        .rounded-letter {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            color: #24272Cb3;
+            background-color: #fafafadc;
+            font-size: 20px;
+            margin-top: 25px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer--icon p {
+            font-size: 12px;
+            font-weight: 600;
+
+        }
+
+        .faicons {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #24272C80;
+        }
+
+        .footer--btm {
+            border-top: 1px solid rgb(36 39 44 / 10%);
+            width: 100%;
+            height: 100px;
+            padding-top: 40px;
+            padding-left: 135px;
+            padding-right: 135px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+        }
+
+        .footer__btm-img {
+            align-items: center;
+        }
+
+        .footer__btm-img img {
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headertop-left">
+            <img src="Desktop-logo.svg">
+        </div>
+        <div class="headertop-centre">
+
+            <input type="text" class="text" id="search" name="search" maxlength="50"
+                placeholder="Search Cars or Brands eg. Swift, or Maruti">
+
+            <button type="submit" class="btn--black"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="headertop--right">
+            <div class="small--text">
+                <span>English<i class="fa fa-caret-down" aria-hidden="true"
+                        style="color:black;margin-left: 4px;"></i></span>
+            </div>
+            <div>
+                <i class="fa fa-heart-o" aria-hidden="true" style="color:black"></i>
+            </div>
+            <div class="med--text">
+                <span>Login&ThickSpace;/<span>&ThickSpace;Register</span></span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav--left">
+
+
+            <ul>
+                <li>
+                    new car&ThickSpace;&thinsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+
+                </li>
+                <li>used car&ThickSpace;&thinsp;<i class="fa fa-caret-down" aria-hidden="true"></i></li>
+                <li>sell car&ThickSpace;&thinsp;<i class="fa fa-caret-down" aria-hidden="true"></i></li>
+                <li>
+                    compare cars
+                </li>
+                <li></i>
+                    news &reviews&ThickSpace;&thinsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
+                <li>cardekho ventures&ThickSpace;&thinsp;<i class="fa fa-caret-down" aria-hidden="true"></i></li>
+                <li>
+                    more&ThickSpace;&thinsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="nav--right">
+
+            <span><i class='fas fa-map-marker-alt'></i>&thinsp;Select City &ThickSpace;&thinsp;<i
+                    class="fa fa-caret-down" aria-hidden="true"></i></span>
+        </div>
+    </nav>
+    <div class="section1">
+        <div class="section1--form">
+            <b>Find your right car</b>
+            <ul>
+                <li class="btn">New Car</li>
+                <li class="btn">Used Car</li>
+            </ul>
+            <input type="radio" id="budget" name="budget" value="HTML">
+            <label for="budget" class="dark--bold"> By Budget</label> <input type="radio" id="budget" name="budget"
+                value="HTML">
+            <label for="budget" class="dark--bold"> By Budget</label><br>
+            <div class="section1--subform">
+                <div class="subform1"> <input type="text" class="text1" id="fname" name="fname"
+                        placeholder="Select Budget"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                <div class="subform2"> <input type="text" class="text1" id="fname" name="fname"
+                        placeholder="All Vehicles Types"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+
+            </div>
+            <div class="orange--btn">
+                <span>Search</span>
+            </div>
+            <div class="text--small">
+                <span>Advanced Search&ThickSpace;&rarr;</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="section2">
+        <span>The most search cars</span>
+        <ul>
+            <li>Hatchback</li>
+            <li>Sedan</li>
+            <li>SUV</li>
+            <li>MUV</li>
+            <li>Luxury</li>
+        </ul>
+        <div>
+            <div class="section2__subsection">
+                <img src="kwid.jpg" style="width: 100%;height: 194px; cursor: pointer;">
+                <div class="section2__subsection--text">
+                    <p>
+                        <title>Renault KWID</title>Renault KWID
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>4.64
+                        -
+                        5.99
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Check November Offers</span>
+                </div>
+            </div>
+            <div class="section2__subsection">
+                <img src="swift.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section2__subsection--text">
+                    <p>
+                        <title>Maruti Baleno</title>Maruti Baleno
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>8.64
+                        -
+                        9.99
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Check November Offers</span>
+                </div>
+            </div>
+            <div class="section2__subsection">
+                <img src="renault.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section2__subsection--text">
+                    <p>
+                        <title>Maruti Swift</title>Maruti Swift
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>5.64
+                        -
+                        8.85
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Check November Offers</span>
+                </div>
+            </div>
+            <div class="section2__subsection">
+                <img src="tata.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section2__subsection--text">
+                    <p>
+                        <title>Tata Tiago</title>Tata Tiago
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>5.40
+                        -
+                        7.82
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Check November Offers</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section2-btm">
+            <span>View All Hatchback Cars</span>
+        </div>
+    </div>
+
+    <div class="section3">
+        <span>Recommended Cars For You </span>
+
+        <div>
+            <div class="section3__subsection">
+                <img src="swift.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section3__subsection--text">
+                    <p>
+                        <title>Maruti Baleno</title>Maruti Baleno
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>8.64
+                        -
+                        9.99
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>View Exciting Offers</span>
+                </div>
+            </div>
+            <div class="section3__subsection">
+                <img src="renault.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section3__subsection--text">
+                    <p>
+                        <title>Maruti Swift</title>Maruti Swift
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>5.64
+                        -
+                        8.85
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>View Exciting Offers</span>
+                </div>
+            </div>
+            <div class="section3__subsection">
+                <img src="tata.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section3__subsection--text">
+                    <p>
+                        <title>Tata Nexon</title>Tata Nexon
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>4.64
+                        -
+                        5.99
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>View Exciting Offers</span>
+                </div>
+            </div>
+            <div class="section3__subsection">
+                <img src="kwid.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section3__subsection--text">
+                    <p>
+                        <title>Renault KWID</title>Renault KWID
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>4.64
+                        -
+                        5.99
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>View Exciting Offers</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="section4">
+        <span>Latest Cars</span>
+
+        <div>
+            <div class="section4__subsection">
+                <img src="swift.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section4__subsection--text">
+                    <p>
+                        <title>Maruti Baleno</title>Maruti Baleno
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>6.64
+                        -
+                        9.71
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Check November Offers</span>
+                </div>
+            </div>
+            <div class="section4__subsection">
+                <img src="audi.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section4__subsection--text">
+                    <p>
+                        <title>Audi A6</title>Audi A6
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>60.64
+                        -
+                        65.99
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Check November Offers</span>
+                </div>
+            </div>
+            <div class="section4__subsection">
+                <img src="marutixl6.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section4__subsection--text">
+                    <p>
+                        <title>Maruti xl6</title>Maruti Xl6
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>14.64
+                        -
+                        15.99
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Check November Offers</span>
+                </div>
+            </div>
+            <div class="section4__subsection">
+                <img src="skoda.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section4__subsection--text">
+                    <p>
+                        <title>Skoda Rapid</title>Skoda Rapid
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>14.64
+                        -
+                        15.99
+                        Lakh<sup>*</sup></span>
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Check November Offers</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section4-btm">
+            <span>View All Latest Cars</span>
+        </div>
+    </div>
+    <div class="section5">
+        <span>Upcoming Cars</span>
+
+        <div>
+            <div class="section5__subsection">
+                <img src="kwid.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section5__subsection--text">
+                    <p>
+                        <title>Renault KWID</title>Renault KWID
+                    </p>
+                    <span>
+                        <i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>
+                        4.64
+                        &hyphen;
+                        5.99 Lakh<sup>*</sup></span>
+                    <span class="greytext--small">Estimated Price
+                    </span>
+                    <p class="greytext--small">Nov 11, 2022 Expected Launch</p>
+
+                </div>
+                <div class="orange__outline--btn">
+                    <span>
+                        Alert Me When Launched
+                    </span>
+                </div>
+            </div>
+            <div class="section5__subsection">
+                <img src="kwid.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section5__subsection--text">
+                    <p>
+                        <title>Renault KWID</title>Renault KWID
+                    </p>
+                    <span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>4.64
+                        -
+                        5.99
+                        Lakh<sup>*</sup></span> <span class="greytext--small">Estimated Price
+                    </span>
+                    <p class="greytext--small">Nov 11, 2022 Expected Launch</p>
+
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Alert Me When Launched</span>
+                </div>
+            </div>
+            <div class="section5__subsection">
+                <img src="kwid.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+                <div class="section5__subsection--text">
+                    <p>
+                        <title>Renault KWID</title>Renault KWID
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>4.64
+                        -
+                        5.99
+                        Lakh<sup>*</sup></span> <span class="greytext--small">Estimated Price
+                    </span>
+                    <p class="greytext--small">Nov 11, 2022 Expected Launch</p>
+
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Alert Me When Launched</span>
+                </div>
+            </div>
+            <div class="section5__subsection">
+                <img src="kwid.jpg" style="width: 100%;height: 194px;">
+                <div class="section2__subsection--text">
+                    <p>
+                        <title>Renault KWID</title>Renault KWID
+                    </p><span><i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>4.64
+                        -
+                        5.99
+                        Lakh<sup>*</sup></span> <span class="greytext--small">Estimated Price
+                    </span>
+                    <p class="greytext--small">Nov 11, 2022 Expected Launch</p>
+
+                </div>
+                <div class="orange__outline--btn">
+                    <span>Alert Me When Launched</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section5-btm">
+            <span>View All Upcoming Cars</span>
+        </div>
+    </div>
+    <div class="section6">
+        <span>Trusted used cars by budget
+        </span>
+        <ul>
+            <li>5-10 LAKH</li>
+            <li>2-7 LAKH</li>
+            <li>12-15 LAKH</li>
+
+        </ul>
+        <hr>
+        <div class="section6__subsection">
+            <img src="kwid.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+            <div class="section6__subsection--text">
+                <p>
+                    <title>Renault KWID</title>Renault KWID
+                </p>
+                <span>
+                    Starting @&ThickSpace; <i class="fa fa-inr" aria-hidden="true"
+                        style="font-size:16px ; font-weight:100"></i>
+
+
+                    1 Lakh</span>
+
+                <p class="greytext--small">172 Available Cars</p>
+
+            </div>
+
+        </div>
+        <div class="section6__subsection">
+            <img src="kwid.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+            <div class="section6__subsection--text">
+                <p>
+                    <title>Renault KWID</title>Renault KWID
+                </p>
+                <span>
+                    Starting @&ThickSpace; <i class="fa fa-inr" aria-hidden="true"
+                        style="font-size:16px ; font-weight:100"></i>
+
+
+                    1 Lakh</span>
+
+                <p class="greytext--small">172 Available Cars</p>
+
+            </div>
+
+        </div>
+        <div class="section6__subsection">
+            <img src="kwid.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+            <div class="section6__subsection--text">
+                <p>
+                    <title>Renault KWID</title>Renault KWID
+                </p>
+                <span>
+                    Starting @&ThickSpace; <i class="fa fa-inr" aria-hidden="true"
+                        style="font-size:16px ; font-weight:100"></i>
+
+
+                    1 Lakh</span>
+
+                <p class="greytext--small">172 Available Cars</p>
+
+            </div>
+
+        </div>
+
+        <div class="section6__subsection">
+            <img src="kwid.jpg" style="width: 100%;height: 194px;cursor: pointer;">
+            <div class="section6__subsection--text">
+                <p>
+                    <title>Renault KWID</title>Renault KWID
+                </p>
+                <span>
+                    Starting @&ThickSpace; <i class="fa fa-inr" aria-hidden="true"
+                        style="font-size:16px ; font-weight:100"></i>
+
+
+                    1 Lakh</span>
+
+                <p class="greytext--small">172 Available Cars</p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="section7">
+        <span>Popular Brands</span>
+
+        <div>
+            <div class="section7__subsection">
+                <img src="tata.webp" style="width: 168px;height: 84px;cursor: pointer; margin: 0px 12px;">
+                <div class="section7__subsection--text">
+                    <span>
+                        <title>Tata</title>Tata
+                    </span>
+
+                </div>
+
+            </div>
+            <div class="section7__subsection">
+                <img src="maruti.webp" style="width: 168px;height: 84px;cursor: pointer; margin: 0px 12px;">
+                <div class="section7__subsection--text">
+                    <span>
+                        <title>Maruti Suzuki</title>Maruti Suzuki
+                    </span>
+
+                </div>
+
+            </div>
+            <div class="section7__subsection">
+                <img src="mahindra.webp" style="width: 168px;height: 84px;cursor: pointer; margin: 0px 12px;">
+                <div class="section7__subsection--text">
+                    <span>
+                        <title>Mahindra</title>Mahindra
+                    </span>
+
+                </div>
+
+            </div>
+            <div class="section7__subsection">
+                <img src="hyundai.webp" style="width: 168px;height: 84px;cursor: pointer; margin: 0px 12px;">
+                <div class="section7__subsection--text">
+                    <span>
+                        <title>Hyundai</title>Hyundai
+                    </span>
+
+                </div>
+
+            </div>
+            <div class="section7__subsection">
+                <img src="kia.webp" style="width: 168px;height: 84px;cursor: pointer; margin: 0px 12px;">
+                <div class="section7__subsection--text">
+                    <span>
+                        <title>Kia</title>Kia
+                    </span>
+
+                </div>
+
+            </div>
+            <div class="section7__subsection">
+                <img src="mercedes-benz.webp" style="width: 168px;height: 84px;cursor: pointer; margin: 0px 12px;">
+                <div class="section7__subsection--text">
+                    <span>
+                        <title>Mercedes benz</title>Mercedes-benz
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="section7-btm">
+                <span>View All Upcoming Cars</span>
+            </div>
+        </div>
+    </div>
+    <div class="section8">
+        <div class="section8-img">
+            <img src="man-thinking.webp" alt="img" style="height: 70%; margin-top:50px">
+        </div>
+
+        <div class="section8--txt"> <img src="Recommender-logo.svg">
+            <p>Not Sure, Which car to buy?</p>
+            <span>Let us help you find the dream car</span>
+        </div>
+        <div class="section8--btn">
+            <span>Show Me Best Cars <i class="fa fa-caret-down" aria-hidden="true"
+                    style="color:white;margin-left: 4px;"></i></span></span>
+        </div>
+    </div>
+    <div class="section9">
+
+        <span>Compare to buy the right car</span>
+        <div style="display: flex;">
+            <div class="section9__subsection">
+                <div class="section9__subsection1">
+                    <img src="skoda.jpg" style="width: 100%;height: 130px;cursor: pointer;">
+                    <div class="vsTag"><span>VS</span></div>
+                    <div class="section9__subsection--text">
+                        <p>
+                            <title>Skoda</title>Skoda
+                        </p>
+                        <span>Slavia</span>
+                        <span>
+                            <i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>
+                            14.64
+                            &hyphen;
+                            5.99 Lakh<sup>*</sup></span>
+
+                    </div>
+
+                </div>
+                <div class="section9__subsection1">
+                    <img src="audi.jpg" style="width: 100%;height: 130px;cursor: pointer;">
+
+                    <div class="section9__subsection--text">
+                        <p>
+                            <title>
+                                Audi
+                            </title>Audi
+                        </p>
+                        <span>S-class</span>
+                        <span>
+                            <i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>
+                            24.64
+                            &hyphen;
+                            25.99 Lakh<sup>*</sup></span>
+
+                    </div>
+
+                </div>
+
+                <div class="section9__orange--btn">
+                    <span>
+                        View Offers
+                    </span>
+                </div>
+            </div>
+            <div class="section9__subsection">
+                <div class="section9__subsection1">
+                    <img src="skoda.jpg" style="width: 100%;height: 130px;cursor: pointer;">
+                    <div class="vsTag"><span>VS</span></div>
+                    <div class="section9__subsection--text">
+                        <p>
+                            <title>Skoda</title>Skoda
+                        </p>
+                        <span>Slavia</span>
+                        <span>
+                            <i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>
+                            14.64
+                            &hyphen;
+                            5.99 Lakh<sup>*</sup></span>
+
+                    </div>
+
+                </div>
+                <div class="section9__subsection1">
+                    <img src="audi.jpg" style="width: 100%;height: 130px;cursor: pointer;">
+
+                    <div class="section9__subsection--text">
+                        <p>
+                            <title>
+                                Audi
+                            </title>Audi
+                        </p>
+                        <span>S-class</span>
+                        <span>
+                            <i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>
+                            24.64
+                            &hyphen;
+                            25.99 Lakh<sup>*</sup></span>
+
+                    </div>
+
+                </div>
+
+                <div class="section9__orange--btn">
+                    <span>
+                        View Offers
+                    </span>
+                </div>
+            </div>
+            <div class="section9__subsection">
+                <div class="section9__subsection1">
+                    <img src="skoda.jpg" style="width: 100%;height: 130px;cursor: pointer;">
+                    <div class="vsTag"><span>VS</span></div>
+                    <div class="section9__subsection--text">
+                        <p>
+                            <title>Skoda</title>Skoda
+                        </p>
+                        <span>Slavia</span>
+                        <span>
+                            <i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>
+                            14.64
+                            &hyphen;
+                            5.99 Lakh<sup>*</sup></span>
+
+                    </div>
+
+                </div>
+                <div class="section9__subsection1">
+                    <img src="audi.jpg" style="width: 100%;height: 130px;cursor: pointer;">
+
+                    <div class="section9__subsection--text">
+                        <p>
+                            <title>
+                                Audi
+                            </title>Audi
+                        </p>
+                        <span>S-class</span>
+                        <span>
+                            <i class="fa fa-inr" aria-hidden="true" style="font-size:16px ; font-weight:100"></i>
+                            24.64
+                            &hyphen;
+                            25.99 Lakh<sup>*</sup></span>
+
+                    </div>
+
+                </div>
+
+                <div class="section9__orange--btn">
+                    <span>
+                        View Offers
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="section9-btm">
+            <span>View All Upcoming Cars</span>
+        </div>
+    </div>
+    <div class="section10">
+        <span>Get trusted used cars nearby</span>
+        <div style="display:flex ;flex-wrap: wrap;">
+            <div class="section10__subsection1">
+                <div class="section10__citydesc"><img src="jaipur.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Jaipur</span>
+                </div>
+                <div class="section10__citydesc">
+                    <img src="gurgaon.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Gurgaon</span>
+                </div>
+                <div class="section10__citydesc"><img src="delhi-ncr.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Delhi Ncr</span>
+                </div>
+                <div class="section10__citydesc"><img src="chennai.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Chennai</span>
+                </div>
+                <div class="section10__citydesc"><img src="ahmedabad.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Ahemdabad</span>
+                </div>
+                <div class="section10__citydesc"><img src="bangalore.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Bangalore</span>
+                </div>
+                <div class="section10__citydesc"><img src="jaipur.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Punjab</span>
+                </div>
+                <div class="section10__citydesc">
+                    <img src="gurgaon.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Gurgaon</span>
+                </div>
+                <div class="section10__citydesc"><img src="delhi-ncr.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Delhi Ncr</span>
+                </div>
+                <div class="section10__citydesc"><img src="bangalore.svg" style="width: 90%;height: 90px;">
+                    <p class="greytext--small ">Used cars in</p>
+                    <span>Bangalore</span>
+                </div>
+            </div>
+            <div class="section10__subsection2">
+                <p>I am looking to buy a second hand car in</p>
+                <div class="custom--select"> <select>
+                        <option value="" disabled selected>Select your city</option>
+                        <option value="delhi">delhi</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select></div>
+                <!--div class="subform3"> <input type="text" class="text1" id="fname" name="fname"
+                        placeholder="Enter your city"><i class="fa fa-caret-down" aria-hidden="true"></i></div -->
+            </div>
+        </div>
+    </div>
+    <div class="section11">
+        <span>News to help choose your car</span>
+
+        <div style="display:flex ;flex-wrap:wrap">
+
+            <div class="section11__subsection">
+                <img src="Marutibaleno.webp" style="width: 248px;height: 200px;cursor: pointer;">
+                <div class="section11__subsection--text">
+                    <p>
+                        Following Toyota, Maruti Is Likely To Introduce CNG Option F...
+                    </p>
+
+                    <div class="greytext"><span>Renault Triber is the most readily available MPV in the price bracket,
+                            but Maruti's people carriers are not far off</span>
+                    </div>
+                    <div class="rounded-letter"><span>R</span></div>
+                    <div style="display: inline-block;margin-top: 15px;"><span>Rohit</span>
+                        <div class="greytext--small"><span>Nov 10, 2022</span></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section11__subsection">
+                <img src="Marutibaleno.webp" style="width: 248px;height: 200px;cursor: pointer;">
+                <div class="section11__subsection--text">
+                    <p>
+                        Following Toyota, Maruti Is Likely To Introduce CNG Option F...
+                    </p>
+
+                    <div class="greytext"><span>Renault Triber is the most readily available MPV in the price bracket,
+                            but Maruti's people carriers are not far off</span>
+                    </div>
+                    <div class="rounded-letter"><span>R</span></div>
+                    <div style="display: inline-block;margin-top: 15px;"><span>Rohit</span>
+                        <div class="greytext--small"><span>Nov 10, 2022</span></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section11__subsection">
+                <img src="Marutibaleno.webp" style="width: 248px;height: 200px;cursor: pointer;">
+                <div class="section11__subsection--text">
+                    <p>
+                        Following Toyota, Maruti Is Likely To Introduce CNG Option F...
+                    </p>
+
+                    <div class="greytext"><span>Renault Triber is the most readily available MPV in the price bracket,
+                            but Maruti's people carriers are not far off</span>
+                    </div>
+                    <div class="rounded-letter"><span>R</span></div>
+                    <div style="display: inline-block;margin-top: 15px;"><span>Rohit</span>
+                        <div class="greytext--small"><span>Nov 10, 2022</span></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section11__subsection">
+                <img src="Marutibaleno.webp" style="width: 248px;height: 200px;cursor: pointer;">
+                <div class="section11__subsection--text">
+                    <p>
+                        Following Toyota, Maruti Is Likely To Introduce CNG Option F...
+                    </p>
+
+                    <div class="greytext"><span>Renault Triber is the most readily available MPV in the price bracket,
+                            but Maruti's people carriers are not far off</span>
+                    </div>
+                    <div class="rounded-letter"><span>R</span></div>
+                    <div style="display: inline-block;margin-top: 15px;"><span>Rohit</span>
+                        <div class="greytext--small"><span>Nov 10, 2022</span></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer--top">
+            <div><span>Car Sold</span></div>
+        </div>
+        <div class="footer--nav">
+
+            <div class="navmenu">
+                <span>
+                    Overview
+                </span>
+                <ul>
+                    <li>About us</li>
+                    <li>FAQs</li>
+                    <li>Privacy Policy</li>
+                    <li> Terms & Conditions</li>
+                    <li> Corporate Policies</li>
+                    <li>Investors</li>
+                </ul>
+            </div>
+            <div class="navmenu">
+                <span>
+                    Others
+                </span>
+                <ul>
+                    <li>Advertise with Us</li>
+                    <li>Careers</li>
+                    <li>Customer Care</li>
+
+                </ul>
+            </div>
+            <div class="navmenu">
+                <span>
+                    Connect with us
+                </span>
+                <ul>
+                    <li>About us</li>
+                    <li>FAQs</li>
+                    <li>Privacy Policy</li>
+                    <li> Terms & Conditions</li>
+                    <li> Corporate Policies</li>
+                    <li>Investors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer--right">
+            <p>Experience Car Dekho</p>
+            <div><img src="playstore.webp" alt="img">
+                <img src="appstore.png" </div>
+                <div class="footer--icon">
+                    <p>follow us </p>
+                    <div class="faicons"><i class="fa fa-youtube-play"></i>&ThickSpace;&ThickSpace;<i
+                            class="fa fa-facebook-f"></i>&ThickSpace;&ThickSpace;<i
+                            class="fa fa-twitter"></i>&ThickSpace;&ThickSpace;
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer--btm">
+            <div class="greytext--small"><span>© 2022 Girnar Software Pvt. Ltd.</span></div>
+            <div class="footer__btm-img">
+                <img src="rupyy-logo-Mobile.svg">
+                <img src="zigwheels.webp">
+                <img src="bikedekho.png">
+                <img src="id-main-logo.svg">
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</html>
